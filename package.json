@@ -1,5 +1,5 @@
 {
-  "name": "ai-saasss",
+  "name": "Scholare-ai",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,8 @@
     "crisp-sdk-web": "^1.0.21",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "gh": "^2.0.7",
+    "git": "^0.1.5",
     "lucide-react": "^0.277.0",
     "next": "^14.1.0",
     "openai": "^4.0.0",
