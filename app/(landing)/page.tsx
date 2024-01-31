@@ -4,6 +4,7 @@ import { LandingNavbar } from '@/components/landing-navbar';
 import { LandingHero } from '@/components/landing-hero';
 import { LandingContent } from '@/components/landing-content';
 import { useRouter } from 'next/navigation';
+import RefundCancellationPolicy from '@/pages/refund-cancellation';
 
 const LandingPage: React.FC = () => {
   const router = useRouter();
@@ -14,6 +15,10 @@ const LandingPage: React.FC = () => {
 
   const handleTermsAndConditionsClick = () => {
     router.push('/terms-and-conditions');
+  };
+
+  const refundcancellationpolicyClick = () => {
+    router.push('/refund-cancellation');
   };
 
   return (
@@ -38,6 +43,13 @@ const LandingPage: React.FC = () => {
             className="text-blue-500 hover:underline cursor-pointer"
           >
             Terms and Conditions
+          </span>{' '}
+          and{' '}
+          <span
+            onClick={refundcancellationpolicyClick}
+            className="text-blue-500 hover:underline cursor-pointer"
+          >
+            Refund and cancellation 
           </span>
         </p>
       </footer>

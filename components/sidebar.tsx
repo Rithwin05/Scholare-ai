@@ -13,6 +13,7 @@ import {ImageIcon,
     VideoIcon,
     Code,
     Settings,
+    SubscriptIcon
      } from "lucide-react";
 import { FreeCounter } from "@/components/free-counter";
 
@@ -110,6 +111,22 @@ const Sidebar = ({
                         </div>
                         </Link>
                     ))}
+                     <a
+            href="https://www.buymeacoffee.com/bollabathic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition"
+            )}
+          >
+            <div className="flex items-center flex-1">
+              <SubscriptIcon
+                className={cn("h-5 w-5 mr-3 text-blue-500")}
+              />{" "}
+              {/* Adjust color as needed */}
+              Subscribe
+            </div>
+          </a>
                 </div>
             </div>
             <FreeCounter
